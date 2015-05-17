@@ -1,0 +1,18 @@
+{
+  "name": "realty-realestate",
+  "description": "Sample angular demo application",
+  "version": "0.0.0",
+  "author": "M F Sabar",
+  "main": "server.js",
+  "dependencies": {
+    "angular": "^1.3.15",
+    "angular-route": "^1.3.15",
+    "express": "^4.12.3"
+  },
+  "devDependencies": {
+    "grunt": "^0.4.5",
+    "grunt-browserify": "^3.8.0",
+    "grunt-contrib-clean": "^0.6.0",
+    "grunt-contrib-copy": "^0.8.0"
+  }
+}

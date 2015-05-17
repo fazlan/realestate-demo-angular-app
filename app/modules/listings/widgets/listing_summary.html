@@ -1,0 +1,81 @@
+<div class="row property-summary">
+    <div class="col-lg-12 col-sm-12">
+        <div class="row header">
+            <div class="col-lg-8 col-sm-8 element">
+                <span class="address">{{listing.street_address}}</span>
+            </div>
+            <div class="col-lg-4 col-sm-4 element">
+                <span class="agent-logo">{{listing.agent}}</span>
+            </div>
+        </div>
+        <div class="row body">
+            <div class="col-lg-8 col-sm-8 property-photo-box">
+                <img src="{{listing.image}}" class="img-responsive"/>
+            </div>
+            <div class="col-lg-4 col-sm-4">
+                <div class="row pull-right">
+                    <div class="col-lg-12 col-sm-12">
+                        <div class="row">
+                            <div class="col-lg-12 col-sm-12">
+                                <span>{{listing.headline}}</span>
+                            </div>
+                        </div>
+                        <div class="row" ng-show="property.is_auction">
+                            <div class="col-lg-12 col-sm-12">
+                                <span>Auction</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-12 col-sm-12">
+                        <span>{{listing.property_type}}</span>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-12 col-sm-12">
+                        <ul class="property-features">
+                            <li class="first"><img
+                                    src="img/icons/i-bedrooms"
+                                    alt="Bedrooms"><span>{{listing.rooms}}</span></li>
+                            <li><img
+                                    src="img/icons/i-bathrooms"
+                                    alt="Bathrooms"><span>{{listing.baths}}</span></li>
+                            <li><img
+                                    src="img/icons/i-carports"
+                                    alt="Car Spaces"><span>{{listing.carports}}</span></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-12 col-sm-12">
+                        <span class="headline">{{listing.summary}}</span>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-12 col-sm-12">
+                        <p>{{listing.description}}</p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-12 col-sm-12">
+                        <span class="agent">Agent:{{listing.agent_name}}</span>
+                    </div>
+                </div>
+                <div class="row more-info">
+                    <div class="col-lg-12 col-sm-12">
+                        <div class="btn-group pull-right">
+                            <a class="btn btn-info">Details</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-lg-12 col-sm-12">
+            <div class="solidline"></div>
+        </div>
+    </div>
+</div>

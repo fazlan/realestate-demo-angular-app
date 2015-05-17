@@ -1,0 +1,94 @@
+<section id="section-search">
+    <div class="container">
+        <!-- banner -->
+        <h3>Buy, Sale &amp; Rent</h3>
+        <div class="searchbar">
+            <div class="row">
+                <div class="col-lg-9 col-sm-9">
+                    <form>
+                        <div class="row form-horizontal">
+                            <div class="col-lg-10 col-sm-10">
+                                <input type="text" ng-model="search.suburb" class="form-control" placeholder="Search of Properties">
+                            </div>
+                            <div class="col-lg-2 col-sm-2">
+                                <a class="btn btn-success" href="#/list/{{search.classification}}/{{search.suburb}}/{{search.property}}/{{search.min_beds}}/{{search.max_beds}}/{{search.min_price}}/{{search.max_price}}">Search</a>
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="col-lg-12 col-sm-12">
+                                <input id="include_surrounding" type="checkbox" ng-model="search.is_include_surrounding" checked="checked">
+                                <label for="include_surrounding">
+                                    Include surrounding suburbs
+                                </label>
+                            </div>
+
+                        </div>
+
+                        <div class="row">
+                            <div class="col-lg-2 col-sm-2">
+                                <html-select-widget ng-model="search.classification" items="['Buy', 'Rent','Sold']"></html-select-widget>
+                            </div>
+
+                            <div class="col-lg-2 col-sm-2">
+                                <html-select-widget ng-model="search.property" items="['Property', 'Apartment','House', 'Townhouse','Unit']"></html-select-widget>
+                            </div>
+
+                            <div class="col-lg-2 col-sm-2">
+                                <html-select-widget ng-model="search.min_beds" items="['Min beds', '1 Bed','2 Beds', '3 Beds', '4 Beds', '5 Beds']"></html-select-widget>
+                            </div>
+
+                            <div class="col-lg-2 col-sm-2">
+                                <html-select-widget ng-model="search.max_beds" items="['Max beds', '1 Bed','2 Beds', '3 Beds', '4 Beds', '5 Beds']"></html-select-widget>
+                            </div>
+
+
+                            <div class="col-lg-2 col-sm-2">
+                                <html-select-widget ng-model="search.min_price" items="['Min price', '$150,000','$200,000', '$250,000', '$300,000', '$350,000']"></html-select-widget>
+                            </div>
+
+                            <div class="col-lg-2 col-sm-2">
+                                <html-select-widget ng-model="search.max_price" items="['Max price', '$150,000','$200,000', '$250,000', '$300,000', '$350,000']"></html-select-widget>
+                            </div>
+
+                        </div>
+                    </form>
+                </div>
+                <div class="col-lg-3 col-sm-3">
+                    <p>Join now and get updated with all the properties deals.</p>
+                    <button class="btn btn-info" data-toggle="modal" data-target="#loginpop">Login</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="section-articles">
+
+    <div class="container">
+
+        <div class="row">
+            <div class="col-lg-12 col-sm-12">
+                <div class="solidline"></div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-lg-9 col-sm-9" >
+
+                <tool-widget ng-repeat="tool in tools"></tool-widget>
+
+            </div>
+
+            <div class="col-lg-3 col-sm-3">
+
+                <sponsor-div ng-repeat="sponsor in sponsors"></sponsor-div>
+
+            </div>
+        </div>
+
+
+
+    </div>
+
+</section>

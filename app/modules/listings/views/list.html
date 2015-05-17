@@ -1,0 +1,110 @@
+
+<section id="section-search">
+    <div class="container">
+        <!-- banner -->
+        <!--<h3>Search results</h3>-->
+
+        <div class="searchbar">
+            <div class="row">
+                <div class="col-lg-2 col-sm-2">
+                    <div class="row section-head">
+                        <div class="col-lg-12 col-sm-12">
+                            <span class="section-title">Refine search</span>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-lg-12 col-sm-12">
+                            <html-select-widget ng-model="search.property" items="['Property', 'Apartment','House', 'Townhouse','Unit']"></html-select-widget>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-lg-12 col-sm-12">
+                            <html-select-widget ng-model="search.min_price" items="['Min price', '$150,000','$200,000', '$250,000', '$300,000', '$350,000']"></html-select-widget>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-lg-12 col-sm-12">
+                            <html-select-widget ng-model="search.max_price" items="['Max price', '$150,000','$200,000', '$250,000', '$300,000', '$350,000']"></html-select-widget>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-lg-12 col-sm-12">
+                            <html-select-widget ng-model="search.min_beds" items="['Min beds', '1 Bed','2 Beds', '3 Beds', '4 Beds', '5 Beds']"></html-select-widget>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-lg-12 col-sm-12">
+                            <html-select-widget ng-model="search.max_beds" items="['Max beds', '1 Bed','2 Beds', '3 Beds', '4 Beds', '5 Beds']"></html-select-widget>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-lg-12 col-sm-12">
+                            <html-select-widget ng-model="search.baths" items="['Bathrooms', '1+','2+', '3+', '4+', '5+']"></html-select-widget>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-lg-12 col-sm-12">
+                            <html-select-widget ng-model="search.carports" items="['Carports', '1+','2+', '3+', '4+', '5+']"></html-select-widget>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-lg-12 col-sm-12">
+                            <button class="btn btn-success"
+                                    onclick="window.location.href=&#39;buysalerent.php&#39;">Update
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-7 col-sm-7">
+                    <div class="row">
+                        <div class="col-lg-12 col-sm-12">
+                            <div class="row section-head">
+                                <div class="col-lg-12 col-sm-12">
+                                    <span class="section-title">Showing 1 - 20 of total results</span>
+                                </div>
+                            </div>
+                            <div class="row">
+
+                                <div class="col-lg-4 col-sm-4">
+                                    <html-select-widget ng-model="search.sort" items="['Sorted by', 'Most relevant','Price(High-Low)', 'Price(Low-High)', 'Date(New-Old)', 'Date(Old-New)', 'Suburb']"></html-select-widget>
+                                </div>
+                                <!--<div class="col-lg-8 col-sm-8">-->
+                                    <!--<div class="row pull-right">-->
+                                        <!--<span>1 | 2 | 3 | 4 > Next</span>-->
+                                    <!--</div>-->
+                                <!--</div>-->
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-12 col-sm-12">
+                            <span class="search-result-text">Results for properties for sale in Australia</span>
+                        </div>
+
+                    </div>
+
+                    <div class="row">
+                        <div class="col-lg-12 col-sm-12">
+                            <div class="solidline"></div>
+                        </div>
+                    </div>
+
+                    <listing-summary-widget class="row property-summary" ng-repeat="listing in listings"></listing-summary-widget>
+
+                </div>
+                <div class="col-lg-3 col-sm-3">
+                    <p>Join now and get updated with all the properties deals.</p>
+                    <button class="btn btn-info" data-toggle="modal" data-target="#loginpop">Login</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

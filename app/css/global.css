@@ -1,0 +1,230 @@
+@import url('http://fonts.googleapis.com/css?family=Noto+Serif:400,400italic,700|Open+Sans:300,400,600,700');
+
+body {
+    font-family:'Open Sans', Arial, sans-serif;
+    color: #777;
+    background-color: #656565;
+    font-weight: 300;
+}
+
+#page {
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    background: #ffffff;
+    /*background-color: red;*/
+}
+/*
+section {
+    margin-bottom: 20px;
+}
+*/
+select, input {
+    margin-bottom: 10px;
+}
+
+a {
+    color: #777;
+    text-decoration: none !important;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-weight: 700;
+}
+
+label {
+    display: inline-block;
+    max-width: 100%;
+    margin-bottom: 10px;
+    font-weight: normal;
+}
+
+header .navbar {
+    min-height: 100px;
+    font-weight: 700;
+    margin: 0;
+}
+
+header .navbar-default {
+    background: #fff;
+    /*background-color: green;*/
+    border-color: transparent;
+}
+
+footer {
+    background: #68A4C4;
+    /*margin-top: 20px;*/
+    padding:50px 0 0 0;
+    color:#f8f8f8;
+}
+
+footer ul.link-list li{
+    padding:2px 0;
+}
+
+footer ul.link-list li a{
+    font-size: 12px;
+    color:#fff;
+}
+
+footer ul.link-list li a:hover {
+    color:#eee;
+}
+
+footer .flickr_badge img {
+    width: 50px;
+    height: 50px;
+    float: left;
+    margin: 0 9px 20px 0;
+}
+
+footer ul.social-network {
+    float: right;
+   list-style: none;
+}
+
+footer ul.social-network li {
+    display: inline;
+    margin: 0 5px;
+}
+
+
+footer ul.social-network span {
+    width: 48px;
+    height: 48px;
+    display: inline-block;
+}
+
+.sm-facebook {
+    background: url("../../public/img/social-media/facebook.png");
+}
+
+.sm-twitter {
+    background: url("../../public/img/social-media/twitter.png");
+}
+
+.sm-linkedin {
+    background: url("../../public/img/social-media/linkedin.png");
+}
+
+.sm-instagram {
+    background: url("../../public/img/social-media/instagram.png");
+}
+
+ul.link-list {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.btn {
+    font-size: 16px;
+}
+
+.btn-success {
+    background: #72b70f;
+    border: 1px solid #72b70f;
+    width: 100%;
+}
+
+@media (min-width:768px) {
+header .navbar-collapse  ul.navbar-nav {
+    float: right;
+    padding-top: 30px;
+}
+}
+
+header div.navbar-brand {
+    margin-top: 10px;
+    width: 230px;
+    height: 80px;
+    background: url("../../public/img/logo.png") 20px no-repeat;
+    background-size: contain;
+}
+
+a:hover,a:focus,a:active, footer a.text-link:hover, strike, .post-meta span a:hover, footer a.text-link,
+ul.meta-post li a:hover, ul.cat li a:hover, ul.recent li h6 a:hover, ul.portfolio-categ li.active a, ul.portfolio-categ li.active a:hover, ul.portfolio-categ li a:hover,ul.related-post li h4 a:hover, span.highlight,article .post-heading h3 a:hover,
+.navbar .nav > .active > a,.navbar .nav > .active > a:hover,.navbar .nav > li > a:hover,.navbar .nav > li > a:focus,.navbar .nav > .active > a:focus, .validation  {
+    color:#68A4C4;
+}
+
+#section-search {
+    background: #fcfcfc;
+}
+
+#section-articles .img-responsive {
+    width: 100%;
+    margin: 10px 0;
+}
+
+#section-articles p.description {
+    margin: 15px 0;
+}
+
+.solidline {
+    border-top: 1px solid #ccc;
+    margin: 20px 0;
+}
+
+
+ul.property-features {
+    padding: 0;
+}
+
+ul.property-features li{
+    display: inline;
+    list-style: none;
+    margin-right: 10px;
+}
+
+ul.property-features li span{
+    margin-left: 5px;
+    font-weight: bold;
+}
+
+.section-head {
+    margin-bottom: 15px;
+}
+
+.section-head span.section-title {
+    font-weight: bold;
+}
+
+.property-summary {
+    border: 1px;
+    margin: 0;
+}
+
+.property-summary .img-responsive {
+    height: 300px;
+    width: 100%;
+    margin: 0;
+}
+
+.property-summary .property-photo-box {
+    padding: 0;
+}
+.property-summary span.headline, span.agent {
+    font-weight: bold;
+ }
+
+.property-summary div.more-info {
+    margin-top: 15px;
+}
+
+span.search-result-text {
+    font-size: 12px;
+}
+
+.property-summary .header {
+    background: #ffe512;
+    height: 40px;
+}
+
+.element {
+    top: 25%;
+}
+
+.property-summary .body {
+    background: url(http://s2.rea.reastatic.net/rs/img/gradients/listing_gradient.png$$3000.385-18) repeat-x 0 100% transparent;
+}
