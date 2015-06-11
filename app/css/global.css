@@ -96,19 +96,19 @@ footer ul.social-network span {
 }
 
 .sm-facebook {
-    background: url("../../public/img/social-media/facebook.png");
+    background: url("../img/social-media/facebook.png");
 }
 
 .sm-twitter {
-    background: url("../../public/img/social-media/twitter.png");
+    background: url("../img/social-media/twitter.png");
 }
 
 .sm-linkedin {
-    background: url("../../public/img/social-media/linkedin.png");
+    background: url("../img/social-media/linkedin.png");
 }
 
 .sm-instagram {
-    background: url("../../public/img/social-media/instagram.png");
+    background: url("../img/social-media/instagram.png");
 }
 
 ul.link-list {
@@ -138,7 +138,7 @@ header div.navbar-brand {
     margin-top: 10px;
     width: 230px;
     height: 80px;
-    background: url("../../public/img/logo.png") 20px no-repeat;
+    background: url("../img/logo.png") 20px no-repeat;
     background-size: contain;
 }
 
@@ -226,5 +226,5 @@ span.search-result-text {
 }
 
 .property-summary .body {
-    background: url(http://s2.rea.reastatic.net/rs/img/gradients/listing_gradient.png$$3000.385-18) repeat-x 0 100% transparent;
+    background: url("./../img/background.png") repeat-x 0 100% transparent;
 }
