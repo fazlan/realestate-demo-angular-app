@@ -4,6 +4,9 @@ This README is to get the application up and running.
 
 ### Demo realestate Angularjs application ###
 
+### Online demo ###
+https://aqueous-scrubland-9359.herokuapp.com/index.html#/
+
 ### Prerequisites ###
 sudo apt-get install nodejs // nodejs
 
